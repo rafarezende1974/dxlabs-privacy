@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Política de Privacidade do aplicativo Pod Estúdio para Android, da DX Labs." />
+    <link rel="icon" href="data:," />
+    <title>Política de Privacidade — Pod Estúdio</title>
+    <style>
+      :root {
+        --bg: #fbfbfa; --surface: #ffffff; --ink: #1c1f22; --ink-soft: #454b52;
+        --muted: #6b7280; --line: #e3e5e2; --accent: #b3311c; --accent-soft: #f9ece9;
+        --code-bg: #f1f2f0;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #101314; --surface: #161a1c; --ink: #eceeed; --ink-soft: #c3c9c6;
+          --muted: #8b9490; --line: #2a3032; --accent: #ff7a5c; --accent-soft: #33201b;
+          --code-bg: #1e2426;
+        }
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0; background: var(--bg); color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 17px; line-height: 1.65;
+      }
+      .page { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+      header.doc-head { padding-bottom: 1.75rem; border-bottom: 2px solid var(--ink); margin-bottom: 2.5rem; }
+      .publisher {
+        font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em;
+        text-transform: uppercase; color: var(--accent); margin: 0 0 0.6rem;
+      }
+      h1 { font-size: 2.15rem; line-height: 1.2; font-weight: 700; margin: 0 0 0.9rem; }
+      .doc-sub { margin: 0; color: var(--ink-soft); font-size: 1.05rem; }
+      .meta { display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; margin-top: 1.4rem; font-size: 0.92rem; color: var(--muted); }
+      .meta dt { font-weight: 700; color: var(--ink-soft); display: inline; }
+      .meta dd { display: inline; margin: 0; }
+      .summary { background: var(--accent-soft); border-radius: 10px; padding: 1.1rem 1.25rem; margin: 0 0 2.5rem; }
+      .summary p { margin: 0; }
+      .summary strong { color: var(--accent); }
+      section { margin: 0 0 2.25rem; }
+      h2 { font-size: 1.35rem; margin: 0 0 0.75rem; }
+      p, li { color: var(--ink-soft); }
+      strong { color: var(--ink); }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.88em; background: var(--code-bg); padding: 0.08em 0.35em; border-radius: 4px;
+      }
+      footer { border-top: 1px solid var(--line); padding-top: 1.5rem; font-size: 0.92rem; color: var(--muted); }
+      a { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="doc-head">
+        <p class="publisher">DX Labs</p>
+        <h1>Política de Privacidade — Pod Estúdio</h1>
+        <p class="doc-sub">Como o aplicativo Pod Estúdio trata as suas informações: de forma simples, ele não coleta nenhuma.</p>
+        <dl class="meta">
+          <div><dt>Aplicativo:</dt> <dd>Pod Estúdio (<code>br.com.dxlabs.podestudio</code>)</dd></div>
+          <div><dt>Desenvolvedor:</dt> <dd>DX Labs (Rafael Rezende)</dd></div>
+          <div><dt>Vigência:</dt> <dd>21 de outubro de 2026</dd></div>
+        </dl>
+      </header>
+
+      <div class="summary">
+        <p><strong>Resumo:</strong> o Pod Estúdio grava áudio apenas no seu aparelho. Não coletamos, não vendemos e não compartilhamos dados pessoais. O app não tem contas, não exibe anúncios, não usa rastreadores e não acessa a internet.</p>
+      </div>
+
+      <section>
+        <h2>1. Dados que ficam no seu aparelho</h2>
+        <p>Tudo o que o app guarda fica armazenado localmente, na pasta privada do aplicativo no seu dispositivo:</p>
+        <ul>
+          <li><strong>Gravações</strong> de podcast que você faz (arquivos de áudio no formato M4A);</li>
+          <li><strong>Sons personalizados</strong> que você atribui aos botões de efeitos (cópias dos arquivos de áudio que você escolher);</li>
+          <li><strong>Configurações</strong> do app, como os nomes e as cores dos botões de efeitos e o volume dos efeitos.</li>
+        </ul>
+        <p>Nada disso é enviado para servidores da DX Labs ou de terceiros. Se você desinstalar o aplicativo, esses arquivos e configurações são apagados junto com ele.</p>
+      </section>
+
+      <section>
+        <h2>2. Permissões utilizadas</h2>
+        <ul>
+          <li><strong>Microfone</strong> (<code>RECORD_AUDIO</code>): usada somente para gravar o áudio do seu podcast, enquanto você estiver gravando.</li>
+          <li><strong>Notificações</strong> (<code>POST_NOTIFICATIONS</code>): usada apenas para mostrar o aviso de "gravando" enquanto uma gravação está em andamento.</li>
+          <li><strong>Serviço em primeiro plano</strong> (<code>FOREGROUND_SERVICE</code> / <code>FOREGROUND_SERVICE_MICROPHONE</code>): permite que a gravação continue com a tela apagada ou o app minimizado, sempre visível na notificação.</li>
+          <li><strong>Manter o aparelho acordado</strong> (<code>WAKE_LOCK</code>): evita que o aparelho interrompa uma gravação longa em andamento.</li>
+        </ul>
+        <p>O Pod Estúdio <strong>não</strong> solicita permissão de internet e não acessa a rede.</p>
+      </section>
+
+      <section>
+        <h2>3. Compartilhamento feito por você</h2>
+        <p>Quando você toca em "Compartilhar" numa gravação, o Android abre a folha de compartilhamento do sistema e o arquivo é enviado somente para o aplicativo e o destino que <strong>você</strong> escolher (por exemplo, WhatsApp, Google Drive ou e-mail). Esse envio é feito pelo aplicativo de destino, sob a política de privacidade dele — a DX Labs não participa nem tem acesso a esse envio.</p>
+      </section>
+
+      <section>
+        <h2>4. Crianças</h2>
+        <p>O Pod Estúdio é uma ferramenta de gravação de áudio de uso geral e não é direcionado a crianças. Como nenhum dado é coletado, nenhuma informação de crianças é tratada pelo aplicativo.</p>
+      </section>
+
+      <section>
+        <h2>5. Alterações desta política</h2>
+        <p>Se esta política mudar, a nova versão será publicada nesta página, com a data de vigência atualizada. Mudanças relevantes também serão indicadas nas notas de versão do aplicativo na Google Play.</p>
+      </section>
+
+      <section>
+        <h2>6. Contato</h2>
+        <p>Dúvidas sobre esta política ou sobre o aplicativo: <a href="mailto:contato@dxlabs.com.br">contato@dxlabs.com.br</a> — site: <a href="https://www.dxlabs.com.br">www.dxlabs.com.br</a>.</p>
+      </section>
+
+      <footer>
+        <p>DX Labs · São Paulo/SP · #digaxiiiss</p>
+      </footer>
+    </div>
+  </body>
+</html>
